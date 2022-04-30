@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+    <link rel="stylesheet" href="wstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div id="background">
+        <nav>
+            <img src="images/logo1.png">
+            <h3>My Works</h3>
+
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <i id="menu" class="ri-menu-2-line"></i>
+            </div>
+        </nav>
+        <section class="sec-01">
+            <div class="container">
+              <h2 class="main-title">Reveal Elements On Scroll</h2>
+              <div class="content">
+                <div class="image">
+                  <img src="images/1.JPG" alt="">
+                </div>
+                
+                <div class="text-box">
+                  <h3>About me</h3>
+                  <p>I am a student studying in SRM University Ramapuram. I am a front-end web developer. I use Python Django and MySql for the backend.
+                      Other than coding, my field of interest are sports, photography anf filmography. I'm a cricketer as well. 
+                  </p>
+                </div>
+              </div>
+              <div class="media-icons">
+                <a href="https://www.linkedin.com/in/tharun-suriya-402178239/" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/tharun.suriya?igshid=YmMyMTA2M2Y=" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/TharunSuriya5" class="icon"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </section>
+          <section class="sec-02">
+            <div class="container">
+              <h3 class="section-title">Websites</h3>
+              <div class="content">
+                <div class="image">
+                  <img src="images/work1.PNG" alt="">
+                </div>
+                <div class="info">
+                  <h4 class="info-title">Flight Ticket Booking Site</h4>
+                  <p>A ticket booking website for flights made by using HTML, CSS and JavaScript.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sec-03">
+            <div class="container">
+              <div class="content">
+                <div class="work2">
+                    <h4 class="info-title">Login Page</h4>
+                    <p>Login page made by using HTML and CSS which is hooked to Python Django backend and MySql database</p>
+                </div>
+                <div class="image">
+                  <img src="images/work 2.PNG" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <script>
+            //common reveal options to create reveal animations
+            ScrollReveal({
+              //reset: true,
+              distance: '60px',
+              duration: 2500,
+              delay: 400
+            });
+      
+            //target elements, and specify options to create reveal animations
+            ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+            ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+            ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+            ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+            ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+            ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+          </script>
+      
+</body>
+</html>

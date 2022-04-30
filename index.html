@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="loader">
+        <div id="wrapperload">
+            <div class="elem">
+                <img src="images/name.png" alt="">
+            </div>
+            <div class="elem">
+                <h3>Studying at SRM Ramapuram</h3>
+            </div>
+            <div class="elem">
+                <h3>Front-end Developer</h3>
+            </div>
+            <div class="elem">
+                <img src="images/pp.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="background">
+        <nav>
+            <img src="images/logo1.png">
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+
+                <i id="menu" class="ri-menu-2-line"></i>
+            </div>
+        </nav>
+        <div id="sections">
+            <div id="left">
+                <div id="smline"></div>
+                <h4>Hello, I am </h4>
+                <img src="images/name.png">
+                <h5>Student at <span id="blue">SRM Ramapuram</span></h5>
+                <div id="playbtn">
+                    <a href="works.html"><img src="images/playbtn.png" alt=""></a>
+                    <h5>See my <span class="bold">Works</span></h5>
+                </div>
+                <div id="contact">
+                    <h3>Contact me</h3>
+                    <h6>Email : <span>tharunsuriya02@email.com</span></h6>
+                    <h6>Contact Number: <span>+91 7904198718</span></h6>
+                </div>
+            </div>
+            <div id="right">
+                <img src="images/potrait1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script>
+        var menu = document.querySelector('#menu');
+        var bg = document.querySelector('#background');
+
+        menu.addEventListener('click', function(){
+            bg.style.transform = 'scale(.8)';
+            bg.style.borderRadius = '10px';
+            bg.style.boxShadow = '0 150px 45px -100px rgba(0,0,0,0.2)';
+        })
+    </script>
+</body>
+</html>

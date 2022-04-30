@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow: hidden;
+    background-color: #ececec;
+}
+
+#loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
+}
+
+#wrapperload{
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#wrapperload .elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: #efefef; */
+}
+
+#wrapperload .elem img{
+    width: 40%;
+}
+
+#wrapperload .elem:nth-child(1){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+
+#wrapperload .elem:nth-child(2){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+}
+
+#wrapperload .elem:nth-child(3){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
+}
+
+@keyframes anim{
+    to{
+        margin-top: -100px;
+    }
+}
+
+@keyframes anim2{
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+#background{
+    width: 100%;
+    height: 100vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    background-color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+nav img{
+    width: 110px;
+
+}
+
+nav #links{
+    display: flex;
+    align-items: center;
+}
+
+nav #links a{
+    margin-left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: black;
+    font-weight: 700;
+    opacity: .6;
+    letter-spacing: 4px;
+}
+
+nav #links i{
+    margin-left: 50px;
+}
+
+nav #links a:nth-child(2){
+    opacity: .3;
+}
+
+#sections{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    padding: 90px;
+    padding-left: 40px;
+}
+#left #smline{
+    width: 90px;
+    height: 3px;
+    margin-top: 60px;
+    background-color: black;
+}
+
+#left h4{
+    font-family: "Gilroy ☞ ";
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+#left img{
+    width: 650px;
+    margin-top: 20px;
+}
+
+#left>h5{
+    font-family: "Gilroy ☞ ";
+
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-top: 25px;
+    padding-left: 20px;
+    font-weight: 700;
+    color: #757575;
+}
+
+#left>h5 span{
+    color: rgb(82, 184, 218);
+}
+
+#playbtn img{
+    width: 100px;
+
+}
+
+#playbtn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#playbtn h5{
+    margin-top: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    opacity: .9;
+}
+
+.bold{
+    font-weight: 800;
+
+}
+
+#contact{
+    margin-top: 150px;
+
+}
+
+#contact h3{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 16px;
+    opacity: .8;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#contact h6{
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+#contact h6 span{
+    color: #04C2C7;
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+}
+
+#right img{
+    margin-top: 0;
+    width: 100%;
+}
+
+
+
