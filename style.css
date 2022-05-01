@@ -176,6 +176,7 @@ nav #links a:nth-child(2){
 }
 
 #playbtn h5{
+    text-decoration: none;
     margin-top: 20px;
     letter-spacing: 10px;
     text-transform: uppercase;
