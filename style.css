@@ -174,7 +174,13 @@ nav #links a:nth-child(2){
     align-items: center;
     justify-content: flex-start;
 }
-
+#playbtn a{
+    margin-top: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    opacity: .9;
+    text-decoration: none;
+}
 #playbtn h5{
     text-decoration: none;
     margin-top: 20px;
